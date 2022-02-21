@@ -4,16 +4,13 @@ import { Routes, RouterModule } from '@angular/router';
 import { PageNotFoundComponent } from './error-routing/not-found/not-found.component';
 import { UncaughtErrorComponent } from './error-routing/error/uncaught-error.component';
 import { ErrorRoutingModule } from './error-routing/error-routing.module';
-import { HomeComponent } from './home/home.component';
-import { MyInfoComponent } from './my-info/my-info.component';
-import { WahooComponent } from './wahoo/wahoo.component';
+import { MainView2Component } from './main-view2/main-view2.component';
 
 export const routes: Routes = [
-  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: '', redirectTo: 'main-view/home', pathMatch: 'full' },
   { path: 'error', component: UncaughtErrorComponent },
-  { path: 'home', component: HomeComponent, data: { text: 'Home' } },
-  { path: 'my-info', component: MyInfoComponent, data: { text: 'My Info' } },
-  { path: 'wahoo', component: WahooComponent, data: { text: 'Wahoo' } },
+  { path: 'main-view', loadChildren: () => import('./main-view/main-view.module').then(m => m.MainViewModule) },
+  { path: 'main-view2', component: MainView2Component, data: { text: 'Main View #2' } },
   { path: '**', component: PageNotFoundComponent } // must always be last
 ];
 
