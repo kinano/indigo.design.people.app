@@ -1,5 +1,35 @@
-<igx-grid [data]="northwindCategories" primaryKey="categoryID" [autoGenerate]="false" displayDensity="cosy" width="941px" height="622px" class="grid">
-  <igx-column header="categoryID" field="categoryID" dataType="number" [sortable]="true" [filterable]="true" [searchable]="true" [selectable]="true" title="categoryID" [disablePinning]="false" [disableHiding]="false"></igx-column>
-  <igx-column header="description" field="description" dataType="string" [sortable]="true" [filterable]="true" [searchable]="true" [selectable]="true" title="description" [disablePinning]="false" [disableHiding]="false"></igx-column>
-  <igx-column header="name" field="name" dataType="string" [sortable]="true" [filterable]="true" [searchable]="true" [selectable]="true" title="name" [disablePinning]="false" [disableHiding]="false"></igx-column>
+<igx-grid [data]="northwindCategories" primaryKey="categoryID" [autoGenerate]="false" displayDensity="cosy" width="610px" height="381px" class="grid">
+  <igx-column header="categoryID" field="categoryID" dataType="number" [sortable]="true" [movable]="true" [editable]="true" [filterable]="true" [searchable]="true" [selectable]="true" title="categoryID" [disablePinning]="false" [disableHiding]="false"></igx-column>
+  <igx-column header="description" field="description" dataType="string" [sortable]="true" [movable]="true" [editable]="true" [filterable]="true" [searchable]="true" [selectable]="true" title="description" [disablePinning]="false" [disableHiding]="false"></igx-column>
+  <igx-column header="name" field="name" dataType="string" [sortable]="true" [movable]="true" [editable]="true" [filterable]="true" [searchable]="true" [selectable]="true" title="name" [disablePinning]="false" [disableHiding]="false"></igx-column>
 </igx-grid>
+<igx-card type="outlined" class="card">
+  <igx-card-header>
+    <h3 igxCardHeaderTitle>Hehe</h3>
+    <h5 igxCardHeaderSubtitle>
+      
+    </h5>
+  </igx-card-header>
+  <igx-card-content class="body-content">
+    <p class="igx-typography__body-1 text"></p>
+  </igx-card-content>
+  <igx-card-actions class="actions-content">
+    <button igxButton="flat" igxRipple class="button">Button</button>
+    <button igxButton="icon" igxRipple>
+      <igx-icon>favorite</igx-icon>
+    </button>
+    <button igxButton="icon" igxRipple>
+      <igx-icon>bookmark</igx-icon>
+    </button>
+    <button igxButton="icon" igxRipple>
+      <igx-icon>share</igx-icon>
+    </button>
+  </igx-card-actions>
+</igx-card>
+<igx-chip class="chip">
+  <igx-prefix>
+    <igx-icon family="material" class="icon">place</igx-icon>
+  </igx-prefix>
+  Country
+</igx-chip>
+<img src="/assets/53c4f9a7b7f5f730460a0235b717b99679251327.png" class="image" />
