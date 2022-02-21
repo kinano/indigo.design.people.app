@@ -5,19 +5,14 @@
 @use "igniteui-angular/theming" as *;
 
 @include igx-core();
-@include igx-typography($font-family: "Roboto", $type-scale: $bootstrap-type-scale);
+@include igx-typography();
 
 $custom-palette: igx-palette(
-  $primary: #007bff,
-  $secondary: #6c757d,
-  $surface: #242939,
-  $error: #dc3545,
-  $success: #28a745,
-  $warn: #ffc107,
-  $info: #17a2b8,
-  $grays: #ffffff,
-  $variant: 'bootstrap');
-@include igx-theme($palette: $custom-palette, $schema: $dark-bootstrap-schema);
+  $primary: #09f,
+  $secondary: #72da67,
+  $surface: #222222,
+  $grays: #FFFFFF);
+@include igx-theme($palette: $custom-palette, $schema: $dark-material-schema);
 
 body {
   background: hsla(var(--igx-surface-500));

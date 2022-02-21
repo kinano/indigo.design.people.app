@@ -3,31 +3,28 @@ import { BrowserModule, HammerModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
-import { IgxIconModule, IgxAvatarModule, IgxButtonModule, IgxRippleModule, IgxListModule, IgxDatePickerModule, IgxInputGroupModule, IgxSelectModule } from 'igniteui-angular';
+import { WahooComponent } from './wahoo/wahoo.component';
+import { IgxGridModule, IgxCardModule, IgxButtonModule, IgxRippleModule, IgxIconModule, IgxChipsModule, IgxInputGroupModule } from 'igniteui-angular';
 import { FormsModule } from '@angular/forms';
-import { MyInfoComponent } from './my-info/my-info.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
-    MyInfoComponent
+    WahooComponent
   ],
   imports: [
     BrowserModule,
     HammerModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    IgxIconModule,
-    IgxAvatarModule,
+    IgxGridModule,
+    IgxCardModule,
     IgxButtonModule,
     IgxRippleModule,
-    IgxListModule,
-    IgxDatePickerModule,
+    IgxIconModule,
+    IgxChipsModule,
     IgxInputGroupModule,
-    FormsModule,
-    IgxSelectModule
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
